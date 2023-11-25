@@ -7,40 +7,40 @@
     <link rel="stylesheet" href="Taschenrechner.css">
 </head>
 <body>
-    <div id="parent">
-        <div id="child0">
-            <h3>Berechnung</h3>
-        </div>
-        <div id="child1" class="children">
-            <p>&#8730</p>
-            <p>x<sup>2</sup></p>
-            <p>Reset</p>
-            <p>&#247</p>
-        </div>
-        <div id="child2" class="children">
-            <p>7</p>
-            <p>8</p>
-            <p>9</p>
-            <p>&#215</p>
-        </div>
-        <div id="child3" class="children">
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
-            <p>&#43</p>
-        </div>
-        <div id="child4" class="children">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>&#45</p>
-        </div>
-        <div id="child5" class="children">
-            <p>&#177</p>
-            <p>0</p>
-            <p>,</p>
-            <p>&#61</p>
-        </div>
-    </div>
+    <table>
+        <th colspan="4" colspan="3"> <input class="display-box" type="text" id="result" disabled>Berechnung</th>
+        <tr>
+            <td>&#8730</td>
+            <td>x<sup>2</sup></td>
+            <td>Reset</td>
+            <td>&#247</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>&#215</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td><input type="button" onclick="display('+')" value="+" ></input></td>
+        </tr>
+        <tr>
+            <td> <input type="button" onclick="display('1')" value="1" ></input></td>
+            <td>2</td>
+            <td>3</td>
+            <td>&#45</td>
+        </tr>
+        <tr>
+            <td>&#177</td>
+            <td>0</td>
+            <td>,</td>
+            <td>&#61</td>
+        </tr>
+    </table>
+    <script src="Taschenrechner.js"></script>
 </body>
 </html>
+
